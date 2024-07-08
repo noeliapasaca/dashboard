@@ -25,6 +25,8 @@ function App() {
     () => {
       (async () => {
 
+        
+
 
 
         {/* Request */ }
@@ -37,8 +39,12 @@ function App() {
 
         {/* Del LocalStorage, obtiene el valor de las claves openWeatherMap y expiringTime */ }
 
-        let savedTextXML = localStorage.getItem("openWeatherMap")
-        let expiringTime = localStorage.getItem("expiringTime")
+        let savedTextXML = localStorage.getItem("openWeatherMap")!
+        let expiringTime = localStorage.getItem("expiringTime")!
+
+        
+
+
 
         {/* Estampa de tiempo actual */ }
 
@@ -107,8 +113,8 @@ function App() {
 
         setIndicators(indicatorsElements)
 
-        
-        
+
+
       })()
     }, [])
 
@@ -158,11 +164,11 @@ function App() {
 
         <Grid xs={12} lg={8}>
 
-             {/* 4. Envíe la variable de estado (dataTable) como prop (input) del componente (BasicTable) */}
+          {/* 4. Envíe la variable de estado (dataTable) como prop (input) del componente (BasicTable) */}
 
-             <BasicTable></BasicTable>
+          <BasicTable></BasicTable>
 
-         </Grid>
+        </Grid>
 
         <Grid xs={12} lg={2}>
           <ControlPanel></ControlPanel>
