@@ -86,22 +86,17 @@ export default function ControlPanel({ listas }: Config) {
     <>
       <Paper
         sx={{
-          mt: 5,
           p: 2,
           display: "flex",
           flexDirection: "column",
         }}
       >
         <Typography  component="h3" variant="h6" color="primary">
-          Graficos Variables vs Tiempo
+          Gráfico
         </Typography>
-        <Typography mb={1} component="p" color="gray">
-          Mostrando información de 2 días
-        </Typography>
-
-        <Grid container spacing={2}>
+        <Grid>
           <Grid item xs={12}>
-            <Box sx={{ minWidth: 120 }}>
+            <Box>
               <FormControl fullWidth>
                 <InputLabel id="simple-select-label">Variables</InputLabel>
                 <Select

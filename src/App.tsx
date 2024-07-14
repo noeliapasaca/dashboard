@@ -183,7 +183,7 @@ function App() {
   return (
     <>
 
-      <Grid container spacing={4}>
+      <Grid container spacing={2}>
 
         <Grid xs={6} md={4} lg={6}>
           {indicators[0]}
@@ -211,18 +211,16 @@ function App() {
 
         </Grid>
 
-        <Grid xs={6} md={4} lg={12}>
+        <Grid xs={6} md={4} lg={3}>
           <Summary></Summary>
         </Grid>
 
-        <Grid xs={6} md={4} lg={12}>
+        <Grid xs={6} md={4} lg={9}>
 
           {/* 4. Envíe la variable de estado (dataTable) como prop (input) del componente (BasicTable) */}
           <BasicTable rows={rowsTable}></BasicTable>
 
         </Grid>
-
-
 
         <Grid xs={12} lg={12}>
           <ControlPanel listas={datosGraficos}></ControlPanel>

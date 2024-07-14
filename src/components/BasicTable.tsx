@@ -27,7 +27,7 @@ export default function BasicTable(data: Config) {
 
 
   return (
-    <Paper sx={{ mt: 5, mb: 5, p: 2, display: "flex", flexDirection: "column" }}>
+    <Paper>
       <Typography component="h2" variant="h6" color="primary" gutterBottom>
         Dirección del viento
       </Typography>
