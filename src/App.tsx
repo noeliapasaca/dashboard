@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
 
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import WeatherChart from './components/WeatherChart';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
@@ -226,15 +224,15 @@ function App() {
 
 
 
-        <Grid xs={12} lg={2}>
+        <Grid xs={12} lg={12}>
           <ControlPanel listas={datosGraficos}></ControlPanel>
         </Grid>
 
 
-
+{/* 
         <Grid xs={6} md={4} lg={10}>
           <WeatherChart></WeatherChart>
-        </Grid>
+        </Grid> */}
 
 
 
